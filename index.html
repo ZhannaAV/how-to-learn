@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="pages/style.css">
+  <link rel="stylesheet" href="pages/index.css">
 </head>
 <body>
-  <div class="page">
-
-    <header class="header">
+<div class="page">
+  <header class="header">
     <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="Логотип">
     <h1 class="header__title">Научиться учиться</h1>
     <p class="header__subtitle">
@@ -20,7 +19,8 @@
     <div class="header__square-pic rotation"></div>
   </header>
 
-    <main class="content">
+  <main class="content">
+    <!--Я не пойму что хочет валидатор, т.к. заголовок в description есть (уровень рекомендовал ревьюэр 1-го спринта), буду рада разъяснениям-->
     <section class="description">
       <article class="two-columns">
         <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
@@ -66,8 +66,7 @@
         <div class="cards__item">
           <img src="./images/cards-question.png" alt="картинка" class="cards__image">
           <h3 class="cards__title">Вопросы</h3>
-          <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно
-            волнует.</p>
+          <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
         </div>
         <div class="cards__item">
           <img src="./images/cards-competence.png" alt="картинка" class="cards__image">
@@ -82,14 +81,11 @@
       <h2 class="section-title">Видео нa TED</h2>
       <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
       <div class="video__iframes">
-        <iframe class="video__iframe" type="text/html" src="https://www.youtube.com/embed/5MgBikgcWnY"
-                frameborder="0" width="515" height="316" allowfullscreen></iframe>
-        <iframe class="video__iframe" type="text/html" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0"
-                width="515"
-                height="316" allowfullscreen></iframe>
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
       </div>
     </section>
-
+<!--Я не пойму что хочет валидатор, т.к. заголовок в oakley есть, буду рада разъяснениям-->
     <section class="oakley">
       <article class="two-columns">
         <h2 class="two-columns__brief">История Барбары Оакли.</h2>
@@ -103,10 +99,9 @@
       </article>
     </section>
 
-
     <section class="feynman">
       <h2 class="feynman__title">Метод Фейнмана</h2>
-      <span class="feynman__subtitle">Выучить и не забыть.</span>
+      <p class="feynman__subtitle">Выучить и не забыть.</p>
       <a class="feynman__link" href="#">Подробнее &#8594;</a>
     </section>
 
@@ -220,20 +215,28 @@
     <section class="resources">
       <h2 class="section-title">Полезные ресурсы</h2>
       <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-      <div class="resources__logo-zone">
-        <img class="resources__logo" src="./images/resources-arzamas.svg" alt="arzama">
-        <img class="resources__logo" src="./images/resources-n1.svg" alt="n+1">
-        <img class="resources__logo" src="./images/resources-strelka.svg" alt="strelka">
-        <img class="resources__logo" src="./images/resources-polka.svg" alt="ПОЛКА">
-      </div>
+      <ul class="resources__logo-zone">
+        <li class="resources__logo">
+          <a class="resources__link" href="#"><img class="resources__logo-image" src="./images/resources-arzamas.svg" alt="логотип arzama"></a>
+        </li>
+        <li class="resources__logo">
+          <a class="resources__link" href="#"><img class="resources__logo-image" src="./images/resources-n1.svg" alt="логотип n+1"></a>
+        </li>
+        <li class="resources__logo">
+          <a class="resources__link" href="#"><img class="resources__logo-image" src="./images/resources-strelka.svg" alt="логотип strelka"></a>
+        </li>
+        <li class="resources__logo">
+          <a class="resources__link" href="#"><img class="resources__logo-image" src="./images/resources-polka.svg" alt="логотип ПОЛКА"></a>
+        </li>
+      </ul>
     </section>
   </main>
 
-    <footer class="footer">
+  <footer class="footer">
     <div class="footer__columns">
       <div class="footer__column footer__column_content_copyright">
-        <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Логотип">
-        <span class="footer__author">&#169;2020.Жанна Аниканова</span>
+        <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Логотип Яндекс.Практикум">
+        <p class="footer__author">&#169;2020.Жанна Аниканова</p>
       </div>
       <nav class="footer__column footer__column_content_info">
         <h3 class="footer__column-heading">О Практикуме</h3>
@@ -247,19 +250,18 @@
         <h3 class="footer__column-heading">Coцсети</h3>
         <ul class="footer__column-links">
           <li>
-            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="иконка">Facebook</a>
+            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="иконка фейсбук">Facebook</a>
           </li>
           <li>
-            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="иконка">ВКонтакте</a>
+            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="иконка вконтакте">ВКонтакте</a>
           </li>
           <li>
-            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="иконка">Instagram</a>
+            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="иконка инстаграм">Instagram</a>
           </li>
         </ul>
       </nav>
     </div>
   </footer>
-
-  </div>
+</div>
 </body>
 </html>
