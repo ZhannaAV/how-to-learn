@@ -1,3 +1,5 @@
 .footer__column_content_info {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }

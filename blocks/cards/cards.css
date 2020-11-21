@@ -1,6 +1,8 @@
 .cards {
+  display: -ms-grid;
   display: grid;
   width: 920px;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 100px;
 }

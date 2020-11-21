@@ -7,6 +7,7 @@
   background-size: 867px 637px;
   padding-top: 80px;
   min-height: 790px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   text-align: center;
